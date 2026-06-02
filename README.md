@@ -4,13 +4,13 @@
 
 A modern, responsive, and visually stunning Clash of Clans-inspired landing page built using HTML, CSS, and JavaScript.
 
-## 🚀 Live Demo
+## <a href="https://kevin-2810.github.io/Clash-Of-Clan/">🚀 Live Demo</a>
 
-Add your deployed website link here:
+
 
 [https://kevin-2810.github.io/Clash-Of-Clan/]
 
----
+
 
 ## 📖 Project Overview
 
