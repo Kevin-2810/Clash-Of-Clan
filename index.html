@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Clash of Clans — Forge Your Legend</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" type="image/png" href="./assets/coclogo.jpg">
+</head>
+<body>
+
+<!-- ── EVENT BANNER ── -->
+<div class="event-banner">
+  <p>Clan War League Season NOW ACTIVE — Clan Games Rewards Available — Join before the deadline!</p>
+</div>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Clash_of_Clans_Logo.png/220px-Clash_of_Clans_Logo.png" alt="CoC Logo" onerror="this.style.display='none'"/>
+    Clash of Clans
+  </div>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#troops">Troops</a></li>
+    <li><a href="#buildings">Buildings</a></li>
+    <li><a href="#clans">Clans</a></li>
+    <li><a href="#loot">Resources</a></li>
+    <li><a href="#download">Download</a></li>
+  </ul>
+  <button class="nav-cta" onclick="smoothTo('download')">Play Free</button>
+  <button class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?w=1600&q=80" alt="Epic battlefield" onerror="this.style.opacity='0'"/>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="particles" id="pContainer"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <img src="./assets/coclogo.jpg" alt="" width="14" height="14" onerror="this.remove()"/>
+      The World's #1 Strategy Game
+    </div>
+    <h1 class="hero-title">CLASH OF<br>CLANS</h1>
+    <p class="hero-sub">Forge &nbsp;·&nbsp; Battle &nbsp;·&nbsp; Conquer</p>
+    <p class="hero-desc">Build your village, raise a clan, and compete in epic Clan Wars with hundreds of millions of players worldwide.</p>
+    <div class="hero-btns">
+      <a href="#download" class="btn-gold">Begin Your Quest</a>
+      <a href="#troops" class="btn-outline">Meet the Troops</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><span class="stat-num" data-target="500">0</span><span class="stat-label">Million+ Downloads</span></div>
+      <div class="stat-item"><span class="stat-num" data-target="200">0</span><span class="stat-label">Countries Reached</span></div>
+      <div class="stat-item"><span class="stat-num" data-target="12">0</span><span class="stat-label">Years of Battles</span></div>
+      <div class="stat-item"><span class="stat-num" data-target="16">0</span><span class="stat-label">Town Hall Levels</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURES ── -->
+<section id="features">
+  <div class="sec-inner">
+    <div class="sec-header reveal">
+      <span class="sec-tag">Why Clash?</span>
+      <h2 class="sec-title">Command Your Kingdom</h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
+      <p class="sec-desc">From humble villages to unstoppable empires — your legend is forged on the battlefield.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card reveal">
+        <img class="feat-img" src="./assets/build.webp" alt="Town Hall" onerror="this.src='https://placehold.co/72x72/2c2416/FFD700?text=TH'"/>
+        <h3 class="feat-title">Build Your Village</h3>
+        <p class="feat-text">Design and fortify your base with over 80 unique buildings. Upgrade your Town Hall to unlock powerful new defenses and troops to crush any invader.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <img class="feat-img" src="./assets/battle.webp" alt="Barbarian King" onerror="this.src='https://placehold.co/72x72/2c2416/FFD700?text=BK'"/>
+        <h3 class="feat-title">Epic Battles</h3>
+        <p class="feat-text">Deploy legendary troops and mighty heroes. Rain destruction upon enemy villages with devastating spells, siege machines, and perfectly-timed attacks.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <img class="feat-img" src="./assets/war.webp" alt="Clan Wars" onerror="this.src='https://placehold.co/72x72/2c2416/FFD700?text=CW'"/>
+        <h3 class="feat-title">Clan Wars</h3>
+        <p class="feat-text">Unite with up to 50 clanmates for epic 3-day wars. Strategize together, coordinate attacks, and claim glorious war loot for your clan's treasury.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <img class="feat-img" src="./assets/league.webp" alt="Legend League" onerror="this.src='https://placehold.co/72x72/2c2416/FFD700?text=LL'"/>
+        <h3 class="feat-title">Legendary Leagues</h3>
+        <p class="feat-text">Rise through Bronze, Silver, Gold, Crystal, Master, and Champion leagues. Reach the pinnacle: Titan and Legend League — home of the world's elite.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <img class="feat-img" src="./assets/builderbase.webp" alt="Builder Base" onerror="this.src='https://placehold.co/72x72/2c2416/FFD700?text=BB'"/>
+        <h3 class="feat-title">Builder Base</h3>
+        <p class="feat-text">Sail to the Builder's paradise and develop a second village with all-new troops, defenses, and the addictive Versus Battle system.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <img class="feat-img" src="./assets/spells.webp" alt="Spells" onerror="this.src='https://placehold.co/72x72/2c2416/FFD700?text=Spell'"/>
+        <h3 class="feat-title">Magic Spells</h3>
+        <p class="feat-text">Brew devastating spells: Lightning, Healing, Freeze, Earthquake and more. A well-timed spell can turn the tide of any battle in an instant.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── TROOPS ── -->
+<section id="troops">
+  <div class="sec-inner">
+    <div class="sec-header reveal">
+      <span class="sec-tag">Your Army Awaits</span>
+      <h2 class="sec-title">Legendary Troops & Heroes</h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
+      <p class="sec-desc">Train mighty warriors and unleash chaos upon your enemies. Click any troop to discover their stats.</p>
+    </div>
+    <div class="filter-row reveal">
+      <button class="filter-btn active" onclick="filterTroops('all',this)">All Troops</button>
+      <button class="filter-btn" onclick="filterTroops('ground',this)">Ground</button>
+      <button class="filter-btn" onclick="filterTroops('air',this)">Air</button>
+      <button class="filter-btn" onclick="filterTroops('dark',this)">Dark Elixir</button>
+      <button class="filter-btn" onclick="filterTroops('heroes',this)">Heroes</button>
+    </div>
+    <div class="troops-grid" id="troops-grid"></div>
+  </div>
+</section>
+
+<!-- ── BUILDINGS ── -->
+<section id="buildings">
+  <div class="sec-inner">
+    <div class="sec-header reveal">
+      <span class="sec-tag">Defend and Prosper</span>
+      <h2 class="sec-title">Mighty Structures</h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
+      <p class="sec-desc">Construct an impenetrable fortress and a thriving economy to fuel your endless conquest.</p>
+    </div>
+    <div class="bld-layout reveal">
+      <div class="bld-list" id="bld-list"></div>
+      <div class="bld-detail">
+        <img class="bld-detail-img" id="bld-detail-img" src="./assets/townhall.webp" alt="Building"/>
+        <h3 class="bld-detail-title" id="bld-detail-title">Town Hall</h3>
+        <p class="bld-detail-text" id="bld-detail-text">The heart of your village. Upgrade to unlock new buildings, troops, and defenses. Losing it means losing half your loot — protect it!</p>
+        <div class="bld-stats-row">
+          <div class="bld-stat"><span class="bld-stat-n" id="bstat-hp">6,800</span><span class="bld-stat-l">Hit Points</span></div>
+          <div class="bld-stat"><span class="bld-stat-n" id="bstat-lv">15</span><span class="bld-stat-l">Max Level</span></div>
+          <div class="bld-stat"><span class="bld-stat-n" id="bstat-type">Core</span><span class="bld-stat-l">Type</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CLANS ── -->
+<section id="clans">
+  <div class="sec-inner">
+    <div class="sec-header reveal">
+      <span class="sec-tag">Stronger Together</span>
+      <h2 class="sec-title">Clan Wars and Glory</h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
+      <p class="sec-desc">Forge unbreakable alliances, wage legendary wars, and dominate the global leaderboard.</p>
+    </div>
+
+    <div class="timer-box reveal">
+      <span class="timer-lbl">Season Ends In</span>
+      <div class="timer-nums">
+        <div class="t-unit"><span class="t-num" id="td">14</span><span class="t-lbl">Days</span></div>
+        <div class="t-unit"><span class="t-num" id="th">08</span><span class="t-lbl">Hours</span></div>
+        <div class="t-unit"><span class="t-num" id="tm">43</span><span class="t-lbl">Mins</span></div>
+        <div class="t-unit"><span class="t-num" id="ts">21</span><span class="t-lbl">Secs</span></div>
+      </div>
+    </div>
+
+    <div class="war-layout reveal">
+      <div class="clan-card red">
+        <img class="clan-badge-img" src="./assets/team1.webp" alt="Dragon Lords" onerror="this.src='https://placehold.co/90x90/5a0000/FFD700?text=DL'"/>
+        <h3 class="clan-name">Dragon Lords</h3>
+        <div class="clan-lv">Clan Level 18</div>
+        <div class="clan-stats">
+          <div class="cs-item"><span class="cs-val">48</span><span class="cs-lbl">War Wins</span></div>
+          <div class="cs-item"><span class="cs-val">47</span><span class="cs-lbl">Members</span></div>
+          <div class="cs-item"><span class="cs-val">3.2</span><span class="cs-lbl">Avg Stars</span></div>
+        </div>
+      </div>
+
+      <div class="vs-block">
+        <svg class="vs-star" width="28" height="28" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12,2 14.4,9.2 22,9.2 16,13.8 18.4,21 12,16.4 5.6,21 8,13.8 2,9.2 9.6,9.2"/></svg>
+        <div class="vs-text">VS</div>
+        <svg class="vs-star" width="28" height="28" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12,2 14.4,9.2 22,9.2 16,13.8 18.4,21 12,16.4 5.6,21 8,13.8 2,9.2 9.6,9.2"/></svg>
+      </div>
+
+      <div class="clan-card blue">
+        <img class="clan-badge-img" src="./assets/team2.webp" alt="Storm Knights" style="filter:hue-rotate(200deg) drop-shadow(0 4px 20px rgba(0,0,0,.6))" onerror="this.src='https://placehold.co/90x90/001a4a/FFD700?text=SK'"/>
+        <h3 class="clan-name">Storm Knights</h3>
+        <div class="clan-lv">Clan Level 22</div>
+        <div class="clan-stats">
+          <div class="cs-item"><span class="cs-val">61</span><span class="cs-lbl">War Wins</span></div>
+          <div class="cs-item"><span class="cs-val">50</span><span class="cs-lbl">Members</span></div>
+          <div class="cs-item"><span class="cs-val">3.7</span><span class="cs-lbl">Avg Stars</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="war-prog reveal">
+      <h3>Live War Progress — Day 2 of 3</h3>
+      <div class="prog-row">
+        <span class="prog-lbl">Dragon Lords</span>
+        <div class="prog-bar"><div class="prog-fill fill-gold" id="bar-red" style="width:0%"></div></div>
+        <span class="prog-val">72 pts</span>
+      </div>
+      <div class="prog-row">
+        <span class="prog-lbl">Storm Knights</span>
+        <div class="prog-bar"><div class="prog-fill fill-blue" id="bar-blue" style="width:0%"></div></div>
+        <span class="prog-val">85 pts</span>
+      </div>
+    </div>
+
+    <div class="lboard reveal">
+      <div class="lboard-head">
+        <span class="lh-cell">Rank</span>
+        <span class="lh-cell">Chief</span>
+        <span class="lh-cell">Trophies</span>
+        <span class="lh-cell">TH</span>
+      </div>
+      <div id="lboard-body"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LOOT & RESOURCES ── -->
+<section id="loot">
+  <div class="sec-inner">
+    <div class="sec-header reveal">
+      <span class="sec-tag">Power Your Empire</span>
+      <h2 class="sec-title">Resources and Loot</h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
+      <p class="sec-desc">Gather gold, elixir, and dark elixir to fuel your unstoppable war machine and upgrade your village.</p>
+    </div>
+    <div class="loot-grid">
+      <div class="loot-card reveal">
+        <img class="loot-img" src="./assets/gold.webp" alt="Gold" onerror="this.src='https://placehold.co/80x80/1a1208/FFD700?text=Gold'"/>
+        <div class="loot-res">Gold</div>
+        <div class="loot-amt">2.4M</div>
+        <div class="loot-desc-txt">Mine from Gold Mines and raid enemy vaults</div>
+        <div class="loot-bar"><div class="loot-fill" style="width:78%;background:linear-gradient(90deg,var(--gold-dark),var(--gold))"></div></div>
+      </div>
+      <div class="loot-card reveal">
+        <img class="loot-img" src="./assets/elixir.webp" alt="Elixir" onerror="this.src='https://placehold.co/80x80/1a1208/cc44ff?text=Elixir'"/>
+        <div class="loot-res">Elixir</div>
+        <div class="loot-amt">1.8M</div>
+        <div class="loot-desc-txt">Train troops and research upgrades in the Lab</div>
+        <div class="loot-bar"><div class="loot-fill" style="width:62%;background:linear-gradient(90deg,#6a0b8a,#cc44ff)"></div></div>
+      </div>
+      <div class="loot-card reveal">
+        <img class="loot-img" src="./assets/darkelixir.webp" alt="Dark Elixir" onerror="this.src='https://placehold.co/80x80/1a1208/7744aa?text=DE'"/>
+        <div class="loot-res">Dark Elixir</div>
+        <div class="loot-amt">48,200</div>
+        <div class="loot-desc-txt">Brew dark spells and upgrade mighty heroes</div>
+        <div class="loot-bar"><div class="loot-fill" style="width:45%;background:linear-gradient(90deg,#1a0a2e,#4a1a6e)"></div></div>
+      </div>
+      <div class="loot-card reveal">
+        <img class="loot-img" src="./assets/gems.webp" alt="Gems" onerror="this.src='https://placehold.co/80x80/1a1208/44ccaa?text=Gems'"/>
+        <div class="loot-res">Gems</div>
+        <div class="loot-amt">1,240</div>
+        <div class="loot-desc-txt">Premium currency — found in bushes or earned via achievements</div>
+        <div class="loot-bar"><div class="loot-fill" style="width:35%;background:linear-gradient(90deg,#0d4a2a,#1a8a50)"></div></div>
+      </div>
+    </div>
+
+    <div class="upg-table reveal">
+      <div class="upg-head">
+        <span class="lh-cell">Upgrade</span>
+        <span class="lh-cell">Cost</span>
+        <span class="lh-cell">Time</span>
+        <span class="lh-cell">Benefit</span>
+      </div>
+      <div id="upg-body"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DOWNLOAD ── -->
+<section id="download">
+  <div class="sec-inner" style="text-align:center">
+    <img class="dl-art" src="./assets/wallpaper.webp" alt="Clash of Clans Characters" onerror="this.src='https://placehold.co/500x280/1e1608/FFD700?text=Clash+of+Clans'"/>
+    <div class="sec-header reveal">
+      <span class="sec-tag">Join Millions of Chiefs</span>
+      <h2 class="sec-title">Your Legend Begins Now</h2>
+      <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
+      <p class="sec-desc">Free to play. Available on iOS, Android, and PC. 500 million clashes and counting.</p>
+    </div>
+    <div class="platform-btns reveal">
+      <a href="#" class="plat-btn" onclick="return false">
+        <img class="plat-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/120px-App_Store_%28iOS%29.svg.png" alt="App Store" onerror="this.remove()"/>
+        <div><div class="plat-label">Download on the</div><div class="plat-name">App Store</div></div>
+      </a>
+      <a href="#" class="plat-btn" onclick="return false">
+        <img class="plat-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/120px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" onerror="this.remove()"/>
+        <div><div class="plat-label">Get it on</div><div class="plat-name">Google Play</div></div>
+      </a>
+      <a href="#" class="plat-btn" onclick="return false">
+        <img class="plat-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/120px-Windows_logo_-_2012.svg.png" alt="Windows" onerror="this.remove()"/>
+        <div><div class="plat-label">Play on</div><div class="plat-name">Windows PC</div></div>
+      </a>
+    </div>
+    <div class="stars reveal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12,2 14.4,9.2 22,9.2 16,13.8 18.4,21 12,16.4 5.6,21 8,13.8 2,9.2 9.6,9.2"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12,2 14.4,9.2 22,9.2 16,13.8 18.4,21 12,16.4 5.6,21 8,13.8 2,9.2 9.6,9.2"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12,2 14.4,9.2 22,9.2 16,13.8 18.4,21 12,16.4 5.6,21 8,13.8 2,9.2 9.6,9.2"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12,2 14.4,9.2 22,9.2 16,13.8 18.4,21 12,16.4 5.6,21 8,13.8 2,9.2 9.6,9.2"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12,2 14.4,9.2 22,9.2 16,13.8 18.4,21 12,16.4 5.6,21 8,13.8 2,9.2 9.6,9.2"/></svg>
+    </div>
+    <div class="rating-txt">4.8 / 5 &nbsp;·&nbsp; 12 Million Reviews</div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Clash_of_Clans_Logo.png/220px-Clash_of_Clans_Logo.png" alt="CoC" onerror="this.remove()"/>
+        <span class="footer-brand-name">Clash of Clans</span>
+        <p>The legendary strategy mobile game by Supercell. Build, battle, and become the mightiest chief in the realm.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Game</h4>
+        <ul><li><a href="#">Features</a></li><li><a href="#">Troops</a></li><li><a href="#">Buildings</a></li><li><a href="#">Clan Wars</a></li><li><a href="#">Updates</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul><li><a href="#">Reddit</a></li><li><a href="#">Discord</a></li><li><a href="#">YouTube</a></li><li><a href="#">Forums</a></li><li><a href="#">Esports</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul><li><a href="#">Help Center</a></li><li><a href="#">Report a Bug</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Contact Us</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Supercell Oy. Fan tribute site — not officially affiliated with Supercell.</p>
+      <div class="social-row">
+        <div class="social-btn" title="Twitter"><svg viewBox="0 0 24 24" width="18" height="18" fill="#FFD700" opacity=".7"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.6 8.6 0 01-2.72 1.04A4.28 4.28 0 0012 8.79a12.14 12.14 0 01-8.81-4.47 4.28 4.28 0 001.33 5.71 4.24 4.24 0 01-1.94-.53v.05a4.28 4.28 0 003.43 4.2 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.98 8.6 8.6 0 01-6.33 1.77A12.14 12.14 0 006.56 19.9c7.88 0 12.2-6.53 12.2-12.2l-.01-.56A8.72 8.72 0 0022.46 6z"/></svg></div>
+        <div class="social-btn" title="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="#FFD700" opacity=".7"><path d="M22.54 6.42a2.78 2.78 0 00-1.96-1.96C18.88 4 12 4 12 4s-6.88 0-8.58.46a2.78 2.78 0 00-1.96 1.96C1 8.12 1 12 1 12s0 3.88.46 5.58a2.78 2.78 0 001.96 1.96C5.12 20 12 20 12 20s6.88 0 8.58-.46a2.78 2.78 0 001.96-1.96C23 15.88 23 12 23 12s0-3.88-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></div>
+        <div class="social-btn" title="Discord"><svg viewBox="0 0 24 24" width="18" height="18" fill="#FFD700" opacity=".7"><path d="M20.32 4.37A19.8 19.8 0 0015.37 3a.07.07 0 00-.08.04c-.26.47-.55.96-.78 1.44a18.27 18.27 0 00-5.48 0A12.44 12.44 0 008.4 3.04a.07.07 0 00-.08.04 19.74 19.74 0 00-4.95 1.37.07.07 0 00-.03.03C1.18 9.09.4 13.66 1.22 18.17a.08.08 0 00.03.05 19.9 19.9 0 005.99 3.03.08.08 0 00.09-.03c.46-.63.87-1.3 1.22-2a.07.07 0 00-.04-.1 13.1 13.1 0 01-1.87-.9.08.08 0 010-.13l.37-.29a.07.07 0 01.08-.01c3.92 1.79 8.18 1.79 12.06 0a.07.07 0 01.08.01l.37.29a.08.08 0 010 .13c-.6.35-1.22.65-1.87.9a.07.07 0 00-.04.1c.36.7.77 1.37 1.22 2a.07.07 0 00.09.03 19.84 19.84 0 006-3.03.08.08 0 00.03-.05c.97-5.01-.16-9.56-2.98-13.77a.07.07 0 00-.03-.03z"/></svg></div>
+        <div class="social-btn" title="Reddit"><svg viewBox="0 0 24 24" width="18" height="18" fill="#FFD700" opacity=".7"><circle cx="12" cy="12" r="10"/><path fill="#13100a" d="M20.07 12a2 2 0 00-3.37-1.46c-1.1-.75-2.6-1.23-4.27-1.3l.72-3.4 2.37.5a1.5 1.5 0 103-.28 1.5 1.5 0 00-2.87-.22l-2.5-.5a.3.3 0 00-.35.22l-.8 3.78c-1.7.07-3.22.55-4.34 1.3A2 2 0 104.67 13.3a3.86 3.86 0 000 .5c0 2.5 2.93 4.5 6.53 4.5s6.53-2 6.53-4.5a3.86 3.86 0 000-.5 2 2 0 00.34-1.3zm-11.57 1a1 1 0 111 1 1 1 0 01-1-1zm5.57 2.66a3.5 3.5 0 01-2.07.52 3.5 3.5 0 01-2.07-.52.27.27 0 010-.38.27.27 0 01.38 0 3 3 0 001.7.4 3 3 0 001.7-.4.27.27 0 01.36.38zm-.07-1.66a1 1 0 111-1 1 1 0 01-1 1z"/></svg></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── MODAL ── -->
+<div class="modal-overlay" id="troop-modal" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+    <img class="modal-img" id="modal-img" src="" alt="Troop"/>
+    <h3 class="modal-title" id="modal-name">Barbarian</h3>
+    <div class="modal-type-badge" id="modal-badge">Ground Troop</div>
+    <p class="modal-desc" id="modal-desc">Description</p>
+    <div class="modal-stats">
+      <div><div class="ms-label">DPS</div><div class="ms-val" id="m-dps">—</div></div>
+      <div><div class="ms-label">Hit Points</div><div class="ms-val" id="m-hp">—</div></div>
+      <div><div class="ms-label">Speed</div><div class="ms-val" id="m-speed">—</div></div>
+    </div>
+    <button class="btn-gold" style="width:100%;justify-content:center" onclick="closeModal()">Deploy in Battle</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
