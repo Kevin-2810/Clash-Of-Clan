@@ -8,7 +8,7 @@ A modern, responsive, and visually stunning Clash of Clans-inspired landing page
 
 Add your deployed website link here:
 
-[(https://kevin-2810.github.io/Clash-Of-Clan/)]
+[https://kevin-2810.github.io/Clash-Of-Clan/]
 
 ---
 
@@ -68,6 +68,5 @@ Players can explore:
 - Google Fonts
 - SVG Icons
 
----
 
-## 📂 Project Structure
+
