@@ -8,10 +8,6 @@ A modern, responsive, and visually stunning Clash of Clans-inspired landing page
 
 
 
-[https://kevin-2810.github.io/Clash-Of-Clan/]
-
-
-
 ## 📖 Project Overview
 
 This project recreates the epic atmosphere of Clash of Clans with immersive visuals, animations, interactive sections, and a premium gaming-inspired UI.
